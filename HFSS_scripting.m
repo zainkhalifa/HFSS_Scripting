@@ -1,3 +1,8 @@
+% This code can generate the script file to be ran in HFSS. Drawing your design in 
+% coding can help with complicated designs or designs that has repititions.
+% Otherwise, you are better off drawing in HFSS environment. 
+% Created By Zainulabideen Khalifa , November, 2019
+
 % functions for HFSS scrips generation
 %-----------------------General Functions-------------------------------
 function [] = HFSS_Variable(fileID,Vars)
