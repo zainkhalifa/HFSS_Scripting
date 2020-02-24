@@ -23,7 +23,7 @@ I needed to a tool to help me draw in one of my projects so I built this library
 5. Draw the environment.
 6. Draw your design, boxes and whatever. Always fill the struct inputs like 'Pars' and 'Attrib' before calling any drawing functions. 
 7. Add the setup configurations using 'HFSS_Setup'. 
-8. fclose(fileID);
+8. 'fclose(fileID);'
 
 After you run the script, do the bounderies and excitations. 
 Then analyse your design. 
@@ -35,7 +35,7 @@ if you are using parametric set in your design, you can use this code to extract
 2. Make your design active using 'HFSS_Header' (you need this before you modify anything in that design).
 3. in a loop, change your parameter using 'HFSS_Property'. 'help HFSS_ExportData' for an example.
 4. Export your data to your desired location and file name. 
-5. fclose(fileID);
+5. 'fclose(fileID);'
 
 
 ## Example Codes
