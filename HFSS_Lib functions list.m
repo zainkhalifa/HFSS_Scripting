@@ -19,6 +19,7 @@
 % function [] = HFSS_Rotate(fileID,name,angle)
 % function [] = HFSS_Property(fileID, Property, Value)
 % function [] = HFSS_Move(fileID,name,vector)
+% function [] = HFSS_Copy(fileID,name)
 % %-----------------------Setup Functions----------------------------------
 % function [no_of_pts] = HFSS_Setup(fileID,freq,sfreq,efreq,fstep,Type)
 % function [] = HFSS_DeleteSetup(filename,freq)
