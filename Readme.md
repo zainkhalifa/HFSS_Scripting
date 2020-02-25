@@ -3,7 +3,7 @@
 This is a simple MATLAB library to generate a script file for HFSS. It is useful when you have a complex design or a design with repetitiveness. You need to be familiar with HFSS before using this tool. 
 I needed a tool to help me draw in one of my projects so I built this library. 
 
-Disclaimer: It is not professionally written. I wrote it along the way as I needed. So always be aware if I missed anything in my descriptions. Make sure that it is doing what you intend and don't count on me taking care of everything for you !
+Disclaimer: The library is not professionally written. I wrote it along the way as I needed. So always be aware if I missed anything in my descriptions. Make sure that it is doing what you intend and don't count on me taking care of everything for you !
 
 ## How to use
 
