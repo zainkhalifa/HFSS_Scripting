@@ -22,7 +22,7 @@
 % function [] = HFSS_Copy(fileID,name)
 % %-----------------------Setup Functions----------------------------------
 % function [] = HFSS_Setup(fileID,Setup_label,freq)
-% 
+% function [no_of_pts] = HFSS_Setup_Sweep(fileID,setup_label,sweep_label,sfreq,efreq,fstep,Type)
 % function [] = HFSS_DeleteSetup(filename,freq)
 % function [] = ExportData(fileID,filename,setup_label)
 % function [] = CombineCMD(setups, filename, line_no,ext)
