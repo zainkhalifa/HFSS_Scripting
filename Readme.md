@@ -44,6 +44,9 @@ if you are using parametric set in your design, you can use this code to extract
 ## Example Codes
 Please refere to the [example files](https://github.com/zainkhalifa/HFSS_Scripting/tree/master/HFSS_Lib/Example).
 
+## List of functions
+[here](https://github.com/zainkhalifa/HFSS_Scripting/blob/master/HFSS_Lib%20functions%20list.m)
+
 ## To modify or add to this library 
 You can refer to HFSS Scriping Help in HFSS but I found that it is not that useful unless your project is mainly building this tool. They give you all possible configurations and senarios. The way I built it was by recording a script while doing a single operation then getting that script and making it MATLAB friendly. You can record a script from `Tools -> Record Script To File...`. 
 
