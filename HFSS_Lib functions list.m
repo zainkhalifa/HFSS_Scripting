@@ -21,7 +21,8 @@
 % function [] = HFSS_Move(fileID,name,vector)
 % function [] = HFSS_Copy(fileID,name)
 % %-----------------------Setup Functions----------------------------------
-% function [no_of_pts] = HFSS_Setup(fileID,freq,sfreq,efreq,fstep,Type)
+% function [] = HFSS_Setup(fileID,Setup_label,freq)
+% 
 % function [] = HFSS_DeleteSetup(filename,freq)
 % function [] = ExportData(fileID,filename,setup_label)
 % function [] = CombineCMD(setups, filename, line_no,ext)
