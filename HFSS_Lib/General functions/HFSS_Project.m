@@ -13,9 +13,7 @@ function [] = HFSS_Project(fileID,Project_location,Project_name)
     fprintf(fileID,'import ScriptEnv\n');
     fprintf(fileID,'ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")\n');
     fprintf(fileID,'oDesktop.RestoreWindow()\n');
-    fprintf(fileID,'oProject = oDesktop.NewProject()\n');
-    fprintf(fileID,'oProject = oDesktop.SetActiveProject("Project1")\n');
-    fprintf(fileID,'oProject.Rename("%s/%s.aedt", True)\n',Project_location,Project_name);
+    fprintf(fileID,'oProject = oDesktop.NewProject("%s/%s.aedt")\n',Project_location,Project_name);
     fprintf(fileID,'oProject.InsertDesign("HFSS", "HFSSDesign1", "DrivenModal", "")\n');
 
 end

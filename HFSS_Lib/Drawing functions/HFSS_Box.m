@@ -15,6 +15,8 @@ function [] = HFSS_Box(fileID,Pars,Attrib,S)
 %         - material is the string name of the material defined in your
 %           HFSS design like "pec" or "vacuum".
 %     # S : for solve inside or not (1 or 0)
+% 
+% function [] = HFSS_Box(fileID,Pars,Attrib,S)
 
 
 if S

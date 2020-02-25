@@ -14,6 +14,8 @@ function [] = HFSS_Port(fileID,Pars,name)
 %         - w for width and h for hight. It will depend on the axis. 
 %         - axis is either "X", "Y" or "Z"
 %     # name is the label of that element like "Box1"
+% 
+% function [] = HFSS_Port(fileID,Pars,name)
 
     fprintf(fileID,'oEditor = oDesign.SetActiveEditor("3D Modeler")\n');
     fprintf(fileID,'oEditor.CreateRectangle(\n');

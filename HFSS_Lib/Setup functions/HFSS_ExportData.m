@@ -13,6 +13,8 @@ function [] = HFSS_ExportData(fileID,filename,setup_label)
 %     extension.
 %     # setup_label --> is the the name of hte setup
 % 
+% function [] = HFSS_ExportData(fileID,filename,setup_label)
+% 
 % example:
 %     file_location = "/data/zainkh/Documents/HFSS_SP/Slotting_test";
 %     file_name = "";

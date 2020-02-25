@@ -21,6 +21,8 @@ function [] = HFSS_Spline(fileID,Pars,Attrib)
 %         - color is a string with RGB like (0 0 255) for blue
 %         - material is the string name of the material defined in your
 %           HFSS design like "pec" or "vacuum".
+% 
+% function [] = HFSS_Spline(fileID,Pars,Attrib)
 
 % Notes for me!
 % if a is the length from start to the mid of the first peak, 

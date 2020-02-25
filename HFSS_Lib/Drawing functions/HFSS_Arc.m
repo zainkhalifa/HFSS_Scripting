@@ -3,13 +3,13 @@ function [] = HFSS_Arc(fileID,Pars,Attrib)
 % creating a 3-point arc with center at origien then moving it internally 
 % using the function HFSS_Move. 
 % 
-% Author : Zainulabideen Khalifa            Last Revision : 2/22/2020
+% Author : Zainulabideen Khalifa            Last Revision : 2/24/2020
 % 
 % Pars and Attrib are of type struct with the following as elements. 
 % All elements must be filled before calling the function. 
 % 
-% Note that Pars.r is the center radius of the Arc and Pars.z is the center
-% elevation of the Arc NOT the bottom face elevation.
+% Note that Pars.r is the center radius of the Arc and Pars.z is the bottom
+% face elevation.
 % 
 % inputs: all inputs are to be written as strings
 %     # Pars --> x,y,z,r,w,h,theta,dtheta
@@ -23,8 +23,11 @@ function [] = HFSS_Arc(fileID,Pars,Attrib)
 %           HFSS design like "pec" or "vacuum".
 %     # "NoS" is a variable that must be predefined in HFSS which is the 
 %       number of sections. make zero for the default in HFSS. 
+% 
+% function [] = HFSS_Arc(fileID,Pars,Attrib)
 
 
+    Pars.z = strcat(Pars.z,"+",Pars.h,"/2");
     fprintf(fileID,'oEditor = oDesign.SetActiveEditor("3D Modeler")\n');
     fprintf(fileID,'oEditor.CreatePolyline(\n');
     fprintf(fileID,'	[\n');

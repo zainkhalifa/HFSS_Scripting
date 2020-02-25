@@ -8,6 +8,8 @@ function [] = HFSS_DeleteSetup(filename,freq)
 %     # freq --> is an array with the frequencies in the setup labels 
 %       assuming the name of the setups as "Setup123" for 
 %       freq=123;. freq is numeric 
+% 
+% function [] = HFSS_DeleteSetup(filename,freq)
 
 fileID = fopen(filename,'w');
 fprintf(fileID,'import ScriptEnv\n');

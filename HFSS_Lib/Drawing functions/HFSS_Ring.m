@@ -18,6 +18,8 @@ function [] = HFSS_Ring(fileID,Pars,Attrib)
 %           HFSS design like "pec" or "vacuum".
 %     # "NoS" is a variable that must be predefined in HFSS which is the 
 %       number of sections. make zero for the default in HFSS. 
+% 
+% function [] = HFSS_Ring(fileID,Pars,Attrib)
 
     Pars1.x = Pars.x;
     Pars1.y = Pars.y;
@@ -31,9 +33,9 @@ function [] = HFSS_Ring(fileID,Pars,Attrib)
     Pars2.h = Pars.h;
     Attrib1 = Attrib;
     Attrib2 = Attrib;
-    Attrib1.name = strcat(Attrib1.name,"1");
-    Attrib2.name = strcat(Attrib2.name,"2");
-    Create_Cylinder(fileID,Pars1,Attrib1);
-    Create_Cylinder(fileID,Pars2,Attrib2);
-    Subtract(fileID,Attrib1.name,Attrib2.name);
+    Attrib1.name = strcat(Attrib1.name,"");
+    Attrib2.name = strcat(Attrib2.name,"b");
+    HFSS_Cylinder(fileID,Pars1,Attrib1);
+    HFSS_Cylinder(fileID,Pars2,Attrib2);
+    HFSS_Subtract(fileID,Attrib1.name,Attrib2.name);
 end

@@ -17,6 +17,8 @@ function [] = HFSS_Cylinder(fileID,Pars,Attrib)
 %           HFSS design like "pec" or "vacuum".
 %     # "NoS" is a variable that must be predefined in HFSS which is the 
 %       number of sections. make zero for the default in HFSS. 
+% 
+% function [] = HFSS_Cylinder(fileID,Pars,Attrib)
 
     fprintf(fileID,'oEditor = oDesign.SetActiveEditor("3D Modeler")\n');
     fprintf(fileID,'oEditor.CreateCylinder(\n');
