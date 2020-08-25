@@ -8,7 +8,8 @@ function [] = HFSS_Project(fileID,Project_location,Project_name)
 % inputs: all inputs are to be written as strings
 %     # Project_location --> like '/data/zainkh/Documents/HFSS'
 %     # Project_name
-
+%
+% function [] = HFSS_Project(fileID,Project_location,Project_name)
 
     fprintf(fileID,'import ScriptEnv\n');
     fprintf(fileID,'ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")\n');

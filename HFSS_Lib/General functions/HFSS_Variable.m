@@ -12,7 +12,8 @@ function [] = HFSS_Variable(fileID,Vars)
 % Vars = {"TRL_Lm1"     "20um"  ;...       % line 1 length
 %         "TRL_Lm2"     "20um"  ;...       % line 2 length
 %         "TRL_Lmo"     "20um"  }          % Stub length
-
+% 
+% function [] = HFSS_Variable(fileID,Vars)
 
     for idx = 1:length(Vars(:,1))
         fprintf(fileID,'oDesign.ChangeProperty(\n');

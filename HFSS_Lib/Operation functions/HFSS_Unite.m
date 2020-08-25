@@ -6,7 +6,8 @@ function [] = HFSS_Unite(fileID,names)
 % inputs: all inputs are to be written as strings
 %     # names are the labels of the elements as a cell array
 %       like {"Box1" "Box123" "ring1"}
-
+%
+% function [] = HFSS_Unite(fileID,names)
 
 
     N = length(names);

@@ -6,6 +6,8 @@ function [] = HFSS_Group(fileID,Names)
 % inputs: all inputs are to be written as strings
 %     # names are the labels of the elements as a cell array
 %       like {"Box1" "Box123" "ring1"}
+%
+% function [] = HFSS_Group(fileID,Names)
 
 
 

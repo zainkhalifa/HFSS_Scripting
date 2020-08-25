@@ -9,9 +9,9 @@ function [no_of_pts] = HFSS_Setup_Sweep(fileID,setup_label,sweep_label,sfreq,efr
 %     # setup_label --> the string name of the predefined setup for the
 %                       sweep to be added to it.  
 %     # sweep_label --> string with the name of the sweep
-%     # sfreq --> the start frequency in GHz. sfreq is numeric %0.2f
-%     # efreq --> the end frequency in GHz. efreq is numeric %0.0f
-%     # fstep --> the step frequency in GHz. fstep is numeric %0.2f
+%     # sfreq --> the start frequency in GHz. sfreq is numeric %0.3f
+%     # efreq --> the end frequency in GHz. efreq is numeric %0.3f
+%     # fstep --> the step frequency in GHz. fstep is numeric %0.3f
 %     # Type --> is a case-insensitive string with the type of sweep like
 %               "Fast", "Discrete" or "Interpolating".
 % 
@@ -19,7 +19,7 @@ function [no_of_pts] = HFSS_Setup_Sweep(fileID,setup_label,sweep_label,sfreq,efr
 
 
 no_of_pts = ((efreq-sfreq)/fstep)+1;
-fprintf("Setup(%s) Sweep(%s): (%0.2f,%0.0f,%0.2f) \t#pts = %0.0f\n"...
+fprintf("Setup(%s) Sweep(%s): (%0.3f,%0.3f,%0.3f) \t#pts = %0.0f\n"...
     ,setup_label,sweep_label,sfreq,efreq,fstep,no_of_pts)
     
 Type = char(lower(Type));
@@ -31,9 +31,9 @@ switch Type(1)
         fprintf(fileID,'		"NAME:%s",\n',sweep_label);
         fprintf(fileID,'		"IsEnabled:="		, True,\n');
         fprintf(fileID,'		"RangeType:="		, "LinearStep",\n');
-        fprintf(fileID,'		"RangeStart:="		, "%0.2fGHz",\n',sfreq);
-        fprintf(fileID,'		"RangeEnd:="		, "%0.0fGHz",\n',efreq);
-        fprintf(fileID,'		"RangeStep:="		, "%0.2fGHz",\n',fstep);
+        fprintf(fileID,'		"RangeStart:="		, "%0.3fGHz",\n',sfreq);
+        fprintf(fileID,'		"RangeEnd:="		, "%0.3fGHz",\n',efreq);
+        fprintf(fileID,'		"RangeStep:="		, "%0.3fGHz",\n',fstep);
         fprintf(fileID,'		"Type:="		, "Fast",\n');
         fprintf(fileID,'		"SaveFields:="		, True,\n');
         fprintf(fileID,'		"SaveRadFields:="	, False,\n');
@@ -47,9 +47,9 @@ switch Type(1)
         fprintf(fileID,'		"NAME:%s",\n',sweep_label);
         fprintf(fileID,'		"IsEnabled:="		, True,\n');
         fprintf(fileID,'		"RangeType:="		, "LinearStep",\n');
-        fprintf(fileID,'		"RangeStart:="		, "%0.2fGHz",\n',sfreq);
-        fprintf(fileID,'		"RangeEnd:="		, "%0.0fGHz",\n',efreq);
-        fprintf(fileID,'		"RangeStep:="		, "%0.2fGHz",\n',fstep);
+        fprintf(fileID,'		"RangeStart:="		, "%0.3fGHz",\n',sfreq);
+        fprintf(fileID,'		"RangeEnd:="		, "%0.3fGHz",\n',efreq);
+        fprintf(fileID,'		"RangeStep:="		, "%0.3fGHz",\n',fstep);
         fprintf(fileID,'		"Type:="		, "Discrete",\n');
         fprintf(fileID,'		"SaveFields:="		, True,\n');
         fprintf(fileID,'		"SaveRadFields:="	, False,\n');
@@ -62,9 +62,9 @@ switch Type(1)
         fprintf(fileID,'		"NAME:%s",\n',sweep_label);
         fprintf(fileID,'		"IsEnabled:="		, True,\n');
         fprintf(fileID,'		"RangeType:="		, "LinearStep",\n');
-        fprintf(fileID,'		"RangeStart:="		, "%0.2fGHz",\n',sfreq);
-        fprintf(fileID,'		"RangeEnd:="		, "%0.0fGHz",\n',efreq);
-        fprintf(fileID,'		"RangeStep:="		, "%0.2fGHz",\n',fstep);
+        fprintf(fileID,'		"RangeStart:="		, "%0.3fGHz",\n',sfreq);
+        fprintf(fileID,'		"RangeEnd:="		, "%0.3fGHz",\n',efreq);
+        fprintf(fileID,'		"RangeStep:="		, "%0.3fGHz",\n',fstep);
         fprintf(fileID,'		"Type:="		, "Interpolating",\n');
         fprintf(fileID,'		"SaveFields:="		, True,\n');
         fprintf(fileID,'		"SaveRadFields:="	, False,\n');

@@ -7,6 +7,8 @@ function [] = HFSS_Copy(fileID,name)
 %     # name is the label of the element like "Box1"
 %       the copies object will have the same name then a number starting
 %       from 1.
+%
+% function [] = HFSS_Copy(fileID,name)
 
     fprintf(fileID,'oEditor = oDesign.SetActiveEditor("3D Modeler")\n');
     fprintf(fileID,'oEditor.Copy(\n');

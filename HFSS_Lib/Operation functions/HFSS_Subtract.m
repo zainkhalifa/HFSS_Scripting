@@ -8,7 +8,8 @@ function [] = HFSS_Subtract(fileID,name1,name2)
 % 
 % inputs: all inputs are to be written as strings
 %     # name is the label of that element like "Box1"
-
+%
+% function [] = HFSS_Subtract(fileID,name1,name2)
 
     fprintf(fileID,'oEditor = oDesign.SetActiveEditor("3D Modeler")\n');
     fprintf(fileID,'oEditor.Subtract(\n');

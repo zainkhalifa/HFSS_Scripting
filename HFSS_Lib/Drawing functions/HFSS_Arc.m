@@ -3,7 +3,7 @@ function [] = HFSS_Arc(fileID,Pars,Attrib)
 % creating a 3-point arc with center at origien then moving it internally 
 % using the function HFSS_Move. 
 % 
-% Author : Zainulabideen Khalifa            Last Revision : 2/24/2020
+% Author : Zainulabideen Khalifa            Last Revision : 08/07/2020
 % 
 % Pars and Attrib are of type struct with the following as elements. 
 % All elements must be filled before calling the function. 
@@ -27,7 +27,7 @@ function [] = HFSS_Arc(fileID,Pars,Attrib)
 % function [] = HFSS_Arc(fileID,Pars,Attrib)
 
 
-    Pars.z = strcat(Pars.z,"+",Pars.h,"/2");
+    Pars.z = strcat(Pars.z,"+","(",Pars.h,")/2");
     fprintf(fileID,'oEditor = oDesign.SetActiveEditor("3D Modeler")\n');
     fprintf(fileID,'oEditor.CreatePolyline(\n');
     fprintf(fileID,'	[\n');
@@ -81,5 +81,5 @@ function [] = HFSS_Arc(fileID,Pars,Attrib)
     fprintf(fileID,'		"SolveInside:="		, False\n');
     fprintf(fileID,'	])\n');
     Pars.z = "0";
-    HFSS_Move(fileID,Attrib.name,Pars) 
+    HFSS_Move(fileID,Attrib.name,Pars)
 end
