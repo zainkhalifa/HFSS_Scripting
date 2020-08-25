@@ -42,7 +42,7 @@ if you are using parametric set in your design, you can use this code to extract
 
 
 ## Example Codes
-Please refere to the [example files](https://github.com/zainkhalifa/HFSS_Scripting/tree/master/HFSS_Lib/Example).
+Please refere to the [example files](https://github.com/zainkhalifa/HFSS_Scripting/tree/master/HFSS_Lib/Example) (Example 2 is most recent).
 
 ## List of functions
 [here](https://github.com/zainkhalifa/HFSS_Scripting/blob/master/HFSS_Lib%20functions%20list.m)
