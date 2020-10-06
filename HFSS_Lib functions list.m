@@ -1,9 +1,9 @@
 % % functions for HFSS scrips generation
-% % Author : Zainulabideen Khalifa            Last Revision : 8/22/2020
+% % Author : Zainulabideen Khalifa            Last Revision : 10/03/2020
 % %-----------------------General Functions-------------------------------
 % function [] = HFSS_Variable(fileID,Vars)
 % function [] = HFSS_Header(fileID,Project_name, Design_name)
-% function [] = HFSS_Project(fileID,Project_location,Project_name)
+% function [] = HFSS_Project(fileID,Project_location,Project_name,Design_name)
 % function [Vars] = ST55_Vars()
 % function [] = ST55_Draw_Env(fileID)
 % %-----------------------Drawing Functions--------------------------------
@@ -14,6 +14,7 @@
 % function [] = HFSS_Port(fileID,Pars,name)
 % function [] = HFSS_Spline(fileID,Pars,Attrib)
 % %------------Specific Drawing Functions--------------------------------
+% function [Names] = CP_4PJunction(fileID,label,Line,Shield)
 % function [Names] = CP_3PJunction(fileID,label,Line,Shield)
 % function [Names] = CP_CirTRL(fileID,label,Line,Shield, radius, angle)
 % function [Names] = CP_Portsheet(fileID,label,Line,Shield)
